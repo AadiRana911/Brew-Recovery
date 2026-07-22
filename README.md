@@ -204,6 +204,21 @@ Set-once-and-forget menu bar apps:
 **Purpose:** AI meeting notes and transcription.
 **Usage:** connect your calendar in Fathom's settings — it joins scheduled calls automatically and produces a transcript + summary afterward.
 
+### herdr
+**Purpose:** terminal workspace manager for AI coding agents — persistent sessions, git worktrees, and panes so you can run/monitor multiple agents (Claude Code, etc.) side by side instead of juggling tabs.
+**Usage:**
+```sh
+herdr                        # launch or attach to the persistent session
+herdr status                 # check local client + running server status
+herdr worktree --help        # git worktree helpers over the socket API
+herdr session attach <name>  # jump back into a named session
+```
+**Tutorial:** run it as a background service so it survives reboots and reattaches instantly:
+```sh
+brew services start herdr
+```
+Or run it in the foreground when you just want it for this terminal session: `herdr server`.
+
 ---
 
 ## Security

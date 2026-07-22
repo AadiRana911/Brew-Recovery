@@ -61,6 +61,7 @@ cask "keepingyouawake"       # prevent sleep during builds/demos
 
 # ── Principal-engineer side ───────────────────────────────────
 cask "fathom"                # AI meeting notes/transcription
+brew "herdr"                  # terminal workspace manager for AI coding agents (sessions/worktrees/panes)
 
 # ── Security ──────────────────────────────────────────────────
 cask "lulu"                  # outbound firewall
